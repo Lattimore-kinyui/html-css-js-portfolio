@@ -105,3 +105,21 @@ a:hover {
 .menu-links.open{
   max-height: 300px;
 }
+/* Hamburger icon animation for open state */
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Reset hamburger icon to default (closed) state */
+.hamburger-icon span {
+  transform: none;
+  opacity: 1;
+}
+
+
